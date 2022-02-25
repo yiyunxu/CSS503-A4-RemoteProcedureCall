@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#run this in cli
+#chmod a+x ./RUN
+
+
+#run this in a separate terminal from server
+echo "Running client driver ..." 
+./client 127.0.0.1 8080 1 0

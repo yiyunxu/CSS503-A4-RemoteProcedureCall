@@ -1,0 +1,27 @@
+CSS503
+Assignment 4
+Elaine Xu
+
+For this assignment, our task it to implement a class-based version of Remote 
+Procedure Call that communicate between a client and server in a distributed 
+application. The client will send request to server and server will perform the 
+system calls. The RPC implementation hides the details that allow communication 
+to take place from the user. The user will act as calling the regular methods.
+
+
+Assignment 2 Sleeping Barbers uses IPC (inter process communicaton) which all 
+happens on one machine, where memory is shared. Signals are sent to check and 
+write to the shared mutex memory directly (barber and customer state). In 
+Assignment 4, RPC (remote process call) is capale of passing message over the 
+wire to a different computer, and has no shared memory at all. The messgae 
+passed in RPC needs to be well structured and contains an identifier to the 
+function to execute and the parameter to pass to that function. Then the sever 
+needs to send back the output to client in a separate message using the same 
+message passing system.
+
+
+When multiple clients make RPC requests at the same time, the requests could be 
+carried out concurrently by implementing multiple threads on the server side. 
+Every connection will spawn a thread that runs its RPC calls. If one thread is 
+trying to modify an already in-use file by a different thread, an error would 
+occur.
