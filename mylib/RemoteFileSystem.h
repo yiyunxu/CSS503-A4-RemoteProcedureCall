@@ -3,8 +3,8 @@
 //
 // Client-side remote (network) filesystem
 //
-// Author: Morris Bernstein
-// Copyright 2019, Systems Deployment, LLC.
+// Author: Elaine Xu
+
 
 #if !defined(RemoteFileSystem_H)
 #define RemoteFileSystem_H
